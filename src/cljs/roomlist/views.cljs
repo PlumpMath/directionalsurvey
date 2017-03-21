@@ -7,7 +7,7 @@
   []
   (let [currenttableconfig  (subscribe [:tableconfig])
         ret (reagent/atom {
-                           :chart    {:type     "scatter"
+                           :chart    {:type     "line"
                                       :zoomType "xy"}
                            :title    {:text "Directional Survey"}
                            :subtitle {:text "An experiment"}
