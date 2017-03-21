@@ -12,7 +12,8 @@
                            :title    {:text "Directional Survey"}
                            :subtitle {:text "An experiment"}
                            :xAxis    {:title      {:text "X"}}
-                           :yAxis    {:title      {:text "Y"}}
+                           :yAxis    {:title      {:text "Y"}
+                                      :reversed true}
                            :credits  {:enabled false}})]
     (let [tabledata (:data @currenttableconfig)
           tmptabledata (into [[0 0 0]] tabledata)
